@@ -16,6 +16,7 @@
   "description": "",
   "devDependencies": {
     "@eslint/js": "^9.25.1",
+    "@types/flux": "^3.1.14",
     "eslint": "^9.25.1",
     "globals": "^16.0.0",
     "husky": "^9.1.7",
@@ -25,5 +26,8 @@
     "webpack": "^5.99.7",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
+  },
+  "dependencies": {
+    "flux": "^4.0.4"
   }
 }
