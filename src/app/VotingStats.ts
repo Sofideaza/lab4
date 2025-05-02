@@ -1,49 +1,63 @@
-// src/app/VotingStats.ts
 import store from '../store/VotingStore';
+import { CHARACTER_NAMES } from '../store/characters';
 
 export class VotingStats extends HTMLElement {
   private fightId!: number;
-  private shadow = this.attachShadow({ mode: 'open' });
+
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+  }
 
   connectedCallback() {
-    this.fightId = +this.getAttribute('fight-id')!;
-    // render inicial y cada vez que cambie el store
-    this.render();
+    this.fightId = Number(this.getAttribute('fight-id'));
     store.addChangeListener(() => this.render());
+    this.render();
   }
 
   private render() {
+    const shadow = this.shadowRoot!;
     const { votes, totalVotes } = store.getState().fights[this.fightId];
-    const bars = Object.entries(votes)
+
+    const barsHtml = Object.entries(votes)
       .map(([charId, count]) => {
         const pct = totalVotes ? Math.round((count / totalVotes) * 100) : 0;
+        const name = CHARACTER_NAMES[+charId] || `P${charId}`;
         return `
-          <div class="bar" style="width: ${pct}%">
-            P${charId}: ${pct}%
+          <div class="bar-container">
+            <div class="label">${name}: ${pct}%</div>
+            <div class="bar" style="width: ${pct}%"></div>
           </div>
         `;
       })
       .join('');
 
-    this.shadow.innerHTML = `
+    shadow.innerHTML = `
       <style>
         .stats {
+          width: 100%;
           display: flex;
           flex-direction: column;
-          gap: 4px;
+          gap: 0.5rem;
+          margin-top: 1rem;
+        }
+        .bar-container {
+          display: flex;
+          flex-direction: column;
+        }
+        .label {
+          font-size: 0.85rem;
+          color: #333;
+          margin-bottom: 0.25rem;
         }
         .bar {
-          height: 1.5rem;
-          background: var(--primary);
-          color: #fff;
-          border-radius: 4px 0 0 4px;
-          line-height: 1.5rem;
-          font-size: 0.85rem;
-          text-align: center;
-          overflow: hidden;
+          height: 0.75rem;
+          background: #960C51;
+          border-radius: 4px;
+          transition: width 0.3s ease;
         }
       </style>
-      <div class="stats">${bars}</div>
+      <div class="stats">${barsHtml}</div>
     `;
   }
 }

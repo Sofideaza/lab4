@@ -18,6 +18,11 @@ export interface StoreState {
   };
 }
 
+
+export interface UserVotes {
+  [fightId: number]: number | null;
+}
+
 export interface Action {
   type: ActionTypes;
   payload: VotePayload;

@@ -14,7 +14,6 @@ export class AppContainer extends HTMLElement {
     const shadow = this.shadowRoot!;
     const fightsHtml = FIGHTS.map(({ fightId, characters }) => {
       const [a, b] = characters;
-      const title = `Pelea ${fightId}`;
       const charsHtml = characters
         .map(
           (charId) =>
@@ -23,10 +22,10 @@ export class AppContainer extends HTMLElement {
         .join('');
       return `
         <div class="fight">
-          <h2 class="fight-title">${title}</h2>
+          <h2 class="fight-title">Pelea ${fightId}</h2>
           <div class="vs-text">${CHARACTER_NAMES[a]} VS ${CHARACTER_NAMES[b]}</div>
           <div class="characters">${charsHtml}</div>
-          
+          <voting-statistics fight-id="${fightId}"></voting-statistics>
         </div>
       `;
     }).join('');
@@ -46,12 +45,14 @@ export class AppContainer extends HTMLElement {
           gap: 2rem;
         }
         .fight {
-          position: relative;
           background: #fff;
           border: 2px solid #960C51;
           border-radius: 16px;
-          padding: 1.5rem 1.5rem 3.5rem;
+          padding: 1.5rem;
           box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
         .fight-title {
           margin: 0;
@@ -62,15 +63,16 @@ export class AppContainer extends HTMLElement {
         .characters {
           display: flex;
           justify-content: space-between;
+          width: 100%;
           margin: 1rem 0 1rem;
         }
         .vs-text {
           margin: 1rem 0 1rem;
-          text-align: center;
           font-size: 1.1rem;
-          font-weight: bold;
           color: #960C51;
+          font-weight: bold;
           margin-bottom: 1rem;
+          text-align: center;
         }
       </style>
       <div class="container">
@@ -81,4 +83,5 @@ export class AppContainer extends HTMLElement {
 }
 
 customElements.define('app-container', AppContainer);
+
 
