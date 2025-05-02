@@ -12,5 +12,6 @@ export interface FightConfig {
     { fightId: 6, characters: [11, 12] },
     { fightId: 7, characters: [13, 14] },
     { fightId: 8, characters: [15, 16] },
+    { fightId: 9, characters: [17, 18] },
   ];
   
