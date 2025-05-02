@@ -1,16 +1,18 @@
-import { EventEmitter } from 'events';
 import dispatcher from './Dispatcher';
 import { Action, StoreState } from './types';
 import { ActionTypes } from './ActionTypes';
+import { FIGHTS } from './fightsConfig';
 
-class VotingStore extends EventEmitter {
+class VotingStore {
   private state: StoreState = { fights: {} };
+  private listeners: Array<() => void> = [];
 
   constructor() {
-    super();
-    for (let i = 1; i <= 8; i++) {
-      this.state.fights[i] = { votes: {}, totalVotes: 0 };
+    for (const { fightId, characters } of FIGHTS) {
+      const votes = Object.fromEntries(characters.map(id => [id, 0]));
+      this.state.fights[fightId] = { votes, totalVotes: 0 };
     }
+
     dispatcher.register(this.handleAction.bind(this));
   }
 
@@ -20,13 +22,25 @@ class VotingStore extends EventEmitter {
       const fight = this.state.fights[fightId];
       fight.votes[characterId] = (fight.votes[characterId] || 0) + 1;
       fight.totalVotes++;
-      this.emit('change');
+      this.emitChange();
     }
   }
 
-  public getState() { return this.state; }
-  public addChangeListener(cb: () => void) { this.on('change', cb); }
-  public removeChangeListener(cb: () => void) { this.off('change', cb); }
+  private emitChange() {
+    this.listeners.forEach(cb => cb());
+  }
+
+  public getState(): StoreState {
+    return this.state;
+  }
+
+  public addChangeListener(cb: () => void) {
+    this.listeners.push(cb);
+  }
+
+  public removeChangeListener(cb: () => void) {
+    this.listeners = this.listeners.filter(fn => fn !== cb);
+  }
 }
 
 export default new VotingStore();

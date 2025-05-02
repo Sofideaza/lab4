@@ -1,1 +1,4 @@
-export enum ActionTypes { VOTE = 'VOTE' }
+export enum ActionTypes {
+    VOTE = 'VOTE',
+  }
+  
