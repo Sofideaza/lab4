@@ -50,7 +50,6 @@ class VotingStore {
   public getState(): StoreState {
     return this.state;
   }
-
   public getUserVote(fightId: number): number | null {
     return this.userVotes[fightId];
   }

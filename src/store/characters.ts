@@ -1,20 +1,19 @@
-export const CHARACTER_NAMES: Record<number, string> = {
-    1: 'Twilight Sparkle',
-    2: 'Rainbow Dash',
-    3: 'Fluttershy',
-    4: 'Rarity',
-    5: 'Applejack',
-    6: 'Pinkie Pie',
-    7: 'Princess Cadance',
-    8: 'Princess Luna',
-    9: 'Princess Celestia',
-    10: 'Starlight Glimmer',
-    11: 'Sunset Shimmer',
-    12: 'Spike',
-    13: 'Derpy Hooves',
-    14: 'Shining Armor',
-    15: 'Zecora',
-    16: 'Sunburst',
-    17: 'Nightmare Moon',
-    18: 'Chrysalis',
-  };
+import poniesData from '../data/ponies.json';
+
+export interface CharacterInfo {
+  id: number;
+  name: string;
+  race: string;
+  description: string;
+  avatar: string;
+}
+
+const ponies: CharacterInfo[] = poniesData as CharacterInfo[];
+
+export const CHARACTER_INFO: Record<number, CharacterInfo> = ponies.reduce(
+  (map, pony) => {
+    map[pony.id] = pony;
+    return map;
+  },
+  {} as Record<number, CharacterInfo>
+);

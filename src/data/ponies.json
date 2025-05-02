@@ -1,0 +1,129 @@
+[
+    {
+      "id": 1,
+      "name": "Twilight Sparkle",
+      "race": "Alicornio",
+      "description": "Nacida en Canterlot, Twilight era una unicornio, pero gracias a su dedicación, estudios sobre la magia de la amistad y, por supuesto, su mentora la Princesa Celestia logró convertirse en alicornio y Princesa de la Amistad.",
+      "avatar": "/avatars/1.png"
+    },
+    {
+      "id": 2,
+      "name": "Rainbow Dash",
+      "race": "Pegaso",
+      "description": "Representante del elemento de “La Lealtad”, Rainbow se encarga de estabilizar la meteorología en Ponyville. Además, por lo gran voladora que es, consiguió formar parte de los Wonderbolts, la élite de acróbatas de toda Equestria.",
+      "avatar": "/avatars/2.png"
+    },
+    {
+      "id": 3,
+      "name": "Fluttershy",
+      "race": "Pegaso",
+      "description": "Corresponsable del cuidado de animales, su amabilidad y valentía aparecen cuando alguien lo necesita. Es tímida pero de gran corazón.",
+      "avatar": "/avatars/3.png"
+    },
+    {
+      "id": 4,
+      "name": "Rarity",
+      "race": "Unicornio",
+      "description": "Diseñadora y amante de la moda, Rarity crea estilos únicos y usa su magia para coser con impecable precisión.",
+      "avatar": "/avatars/4.png"
+    },
+    {
+      "id": 5,
+      "name": "Applejack",
+      "race": "Terreste",
+      "description": "Trabajadora de la granja Manzana de la Manzana, con honestidad y empeño cultiva las manzanas más jugosas de Ponyville.",
+      "avatar": "/avatars/5.png"
+    },
+    {
+      "id": 6,
+      "name": "Pinkie Pie",
+      "race": "Terreste",
+      "description": "Experta en fiestas y risas, Pinkie Pie vive para alegrar el día de todos con su energía inagotable.",
+      "avatar": "/avatars/6.png"
+    },
+    {
+      "id": 7,
+      "name": "Princess Cadance",
+      "race": "Alicornio",
+      "description": "Princesa del Amor, usa su magia para unir corazones y gobierna Crystal Empire junto a Shining Armor.",
+      "avatar": "/avatars/7.png"
+    },
+    {
+      "id": 8,
+      "name": "Princess Luna",
+      "race": "Alicornio",
+      "description": "Guardiana de los sueños, protege a los ponis de las pesadillas y gobierna la noche de Equestria.",
+      "avatar": "/avatars/8.png"
+    },
+    {
+      "id": 9,
+      "name": "Princess Celestia",
+      "race": "Alicornio",
+      "description": "Soberana de Equestria y mentora de Twilight, alza el sol cada mañana con sabiduría y compasión.",
+      "avatar": "/avatars/9.png"
+    },
+    {
+      "id": 10,
+      "name": "Starlight Glimmer",
+      "race": "Unicornio",
+      "description": "Estudiosa de la magia experimental, pasó de villana a amiga tras comprender el valor de la amistad.",
+      "avatar": "/avatars/10.png"
+    },
+    {
+      "id": 11,
+      "name": "Sunset Shimmer",
+      "race": "Unicornio",
+      "description": "Anterior alumna de Celestia, cruzó al mundo humano y aprendió sobre redención y compañerismo.",
+      "avatar": "/avatars/11.png"
+    },
+    {
+      "id": 12,
+      "name": "Spike",
+      "race": "Dragón",
+      "description": "Fiel asistente de Twilight Sparkle, escribe pergaminos y ayuda en la biblioteca con gran lealtad.",
+      "avatar": "/avatars/12.png"
+    },
+    {
+      "id": 13,
+      "name": "Derpy Hooves",
+      "race": "Pegaso",
+      "description": "Conocida por su torpeza adorable, trabaja en correos y siempre entrega cartas con entusiasmo.",
+      "avatar": "/avatars/13.png"
+    },
+    {
+      "id": 14,
+      "name": "Shining Armor",
+      "race": "Unicornio",
+      "description": "Capitán de la guardia real y hermano mayor de Twilight, protege el reino con valentía.",
+      "avatar": "/avatars/14.png"
+    },
+    {
+      "id": 15,
+      "name": "Zecora",
+      "race": "Otro",
+      "description": "Sabia curandera del Everfree Forest, habla en rimas y prepara pociones curativas.",
+      "avatar": "/avatars/15.png"
+    },
+    {
+      "id": 16,
+      "name": "Sunburst",
+      "race": "Unicornio",
+      "description": "Amigo de Starlight Glimmer y experto en runas antiguas. Aunque no es muy hábil volando, su conocimiento es invaluable.",
+      "avatar": "/avatars/16.png"
+    },
+    {
+      "id": 17,
+      "name": "Nightmare Moon",
+      "race": "Alicornio",
+      "description": "Antiguamente Princesa Luna, su envidia la llevó a convertirse en Nightmare Moon, amenazando con noche eterna.",
+      "avatar": "/avatars/17.png"
+    },
+    {
+      "id": 18,
+      "name": "Chrysalis",
+      "race": "Criatura",
+      "description": "Reina de los Changelings, experta en tomar forma y manipular emociones para conquistar Equestria.",
+      "avatar": "/avatars/18.png"
+    }
+  ]
+  

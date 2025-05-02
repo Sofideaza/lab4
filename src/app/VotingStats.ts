@@ -1,5 +1,5 @@
 import store from '../store/VotingStore';
-import { CHARACTER_NAMES } from '../store/characters';
+import { CHARACTER_INFO } from '../store/characters';
 
 export class VotingStats extends HTMLElement {
   private fightId!: number;
@@ -16,13 +16,13 @@ export class VotingStats extends HTMLElement {
   }
 
   private render() {
-    const shadow = this.shadowRoot!;
+    const shadow     = this.shadowRoot!;
     const { votes, totalVotes } = store.getState().fights[this.fightId];
 
     const barsHtml = Object.entries(votes)
       .map(([charId, count]) => {
-        const pct = totalVotes ? Math.round((count / totalVotes) * 100) : 0;
-        const name = CHARACTER_NAMES[+charId] || `P${charId}`;
+        const pct  = totalVotes ? Math.round((count / totalVotes) * 100) : 0;
+        const name = CHARACTER_INFO[+charId].name;
         return `
           <div class="bar-container">
             <div class="label">${name}: ${pct}%</div>
@@ -41,10 +41,7 @@ export class VotingStats extends HTMLElement {
           gap: 0.5rem;
           margin-top: 1rem;
         }
-        .bar-container {
-          display: flex;
-          flex-direction: column;
-        }
+        .bar-container { display: flex; flex-direction: column; }
         .label {
           font-size: 0.85rem;
           color: #333;
@@ -63,3 +60,4 @@ export class VotingStats extends HTMLElement {
 }
 
 customElements.define('voting-statistics', VotingStats);
+

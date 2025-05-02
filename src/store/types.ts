@@ -18,7 +18,6 @@ export interface StoreState {
   };
 }
 
-
 export interface UserVotes {
   [fightId: number]: number | null;
 }
