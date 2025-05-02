@@ -50,7 +50,10 @@ export class CharacterDetail extends HTMLElement {
           border: 4px solid #5C6BC0;
           border-radius: 16px;
           max-width: 800px;
-          width: 90%;
+          width: 80vw;
+          max-width: 900px;
+          height: 60vh;
+          max-height: 400px;
           padding: 1rem;
           display: flex;
           position: relative;
@@ -64,7 +67,8 @@ export class CharacterDetail extends HTMLElement {
           cursor: pointer;
         }
         .image {
-          flex: 1; padding: 1rem;
+          flex: 1; 
+          padding: 1rem;
         }
         .image img {
           width: 100%;
@@ -72,7 +76,10 @@ export class CharacterDetail extends HTMLElement {
           border-radius: 12px;
         }
         .info {
-          flex: 2; padding: 1rem; box-sizing: border-box;
+          flex: 2; 
+          padding: 1rem; 
+          box-sizing: border-box;
+          overflow-y: auto;
         }
         .info h2 {
           margin: 0 0 0.5rem;

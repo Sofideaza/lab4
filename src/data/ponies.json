@@ -17,35 +17,35 @@
       "id": 3,
       "name": "Fluttershy",
       "race": "Pegaso",
-      "description": "Corresponsable del cuidado de animales, su amabilidad y valentía aparecen cuando alguien lo necesita. Es tímida pero de gran corazón.",
+      "description": "Representante del elemento de “La Amabilidad”, es una linda pegasoque se encarga del cuidado de animales, su amabilidad y valentía aparecen cuando alguien lo necesita. Es tímida pero de gran corazón.",
       "avatar": "/avatars/3.png"
     },
     {
       "id": 4,
       "name": "Rarity",
       "race": "Unicornio",
-      "description": "Diseñadora y amante de la moda, Rarity crea estilos únicos y usa su magia para coser con impecable precisión.",
+      "description": "Representante del elemento de “La Generosidad”, es una diseñadora y amante de la moda, Rarity crea estilos únicos y usa su magia para coser con impecable precisión.",
       "avatar": "/avatars/4.png"
     },
     {
       "id": 5,
       "name": "Applejack",
       "race": "Terreste",
-      "description": "Trabajadora de la granja Manzana de la Manzana, con honestidad y empeño cultiva las manzanas más jugosas de Ponyville.",
+      "description": "Representante del elemento de “La Honestidad”, Trabajadora de la granja Apple, con honestidad y empeño cultiva las manzanas más jugosas de Ponyville.",
       "avatar": "/avatars/5.png"
     },
     {
       "id": 6,
       "name": "Pinkie Pie",
       "race": "Terreste",
-      "description": "Experta en fiestas y risas, Pinkie Pie vive para alegrar el día de todos con su energía inagotable.",
+      "description": "Representante del elemento de “La Risa”, es una poni terrestre experta en fiestas y risas, Pinkie Pie vive para alegrar el día de todos con su energía inagotable.",
       "avatar": "/avatars/6.png"
     },
     {
       "id": 7,
       "name": "Princess Cadance",
       "race": "Alicornio",
-      "description": "Princesa del Amor, usa su magia para unir corazones y gobierna Crystal Empire junto a Shining Armor.",
+      "description": "Gobernante del Imperio de Cristal, Cadence es la princesa del Amor, usa su magia para unir corazones y proteger a los habitantes de las cadenas del Rey Sombra.",
       "avatar": "/avatars/7.png"
     },
     {
@@ -79,7 +79,7 @@
     {
       "id": 12,
       "name": "Spike",
-      "race": "Dragón",
+      "race": "Otro",
       "description": "Fiel asistente de Twilight Sparkle, escribe pergaminos y ayuda en la biblioteca con gran lealtad.",
       "avatar": "/avatars/12.png"
     },
@@ -94,21 +94,21 @@
       "id": 14,
       "name": "Shining Armor",
       "race": "Unicornio",
-      "description": "Capitán de la guardia real y hermano mayor de Twilight, protege el reino con valentía.",
+      "description": "Capitán de la guardia real, hermano mayor de Twilight y esposo de la princesa Cadence. Se encarga de proteger el reino con valentía.",
       "avatar": "/avatars/14.png"
     },
     {
       "id": 15,
       "name": "Zecora",
       "race": "Otro",
-      "description": "Sabia curandera del Everfree Forest, habla en rimas y prepara pociones curativas.",
+      "description": "Es una cebra curandera del Everfree Forest, habla en rimas y prepara pociones curativas.",
       "avatar": "/avatars/15.png"
     },
     {
       "id": 16,
       "name": "Sunburst",
       "race": "Unicornio",
-      "description": "Amigo de Starlight Glimmer y experto en runas antiguas. Aunque no es muy hábil volando, su conocimiento es invaluable.",
+      "description": "Amigo de Starlight Glimmer y experto en runas antiguas. Aunque aveces puede ser un poco distraido, su conocimiento es invaluable.",
       "avatar": "/avatars/16.png"
     },
     {
@@ -121,8 +121,8 @@
     {
       "id": 18,
       "name": "Chrysalis",
-      "race": "Criatura",
-      "description": "Reina de los Changelings, experta en tomar forma y manipular emociones para conquistar Equestria.",
+      "race": "Otro",
+      "description": "Reina de los Changelings, experta en tomar forma y manipular emociones para apoderarse del amor y magia de la amistad de los habitantes de toda Equestria.",
       "avatar": "/avatars/18.png"
     }
   ]
