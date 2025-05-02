@@ -53,7 +53,7 @@ export class CharacterDetail extends HTMLElement {
           width: 80vw;
           max-width: 900px;
           height: 60vh;
-          max-height: 400px;
+          max-height: 500px;
           padding: 1rem;
           display: flex;
           position: relative;
